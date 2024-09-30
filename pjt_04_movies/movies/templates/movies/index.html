@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>영화 추천</h1>
+
+
+  <hr>
+  <a href="{% url "movies:create" %}">
+    <button type="button" class="btn btn-dark" 
+            style="transition: transform 0.2s;" 
+            onmouseover="this.style.transform='scale(1.05)';" 
+            onmouseout="this.style.transform='scale(1)';">NEW</button>
+  </a>
+  <hr>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      {% for movie in movies %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="d-flex flex-column align-items-center">  <!-- 중앙 정렬을 위한 flexbox 사용 -->
+            {% if movie.image %}  <!-- 이미지가 존재하는 경우에만 표시 -->
+              <a href="{% url 'movies:detail' movie.pk %}">  <!-- 이미지 클릭 시 detail 페이지로 이동 -->
+                <img src="{{ movie.image.url }}" alt="{{ movie.title }}" style="max-width: 300px; max-height: 500px; width: auto; height: auto;">  <!-- 이미지 크기 조정 -->
+              </a>
+            {% endif %}
+            <h5 class="mt-2">{{ movie.title }}</h5>  <!-- 영화 제목 -->
+            <p class="text-center" style="max-width: 300px;">{{ movie.storyline }}</p>  <!-- 줄거리 -->
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  
+  
+  
+  
+  
+{% endblock content %}

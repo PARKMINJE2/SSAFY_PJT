@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Stylish&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white;">PJT03</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+            <!-- href에 #id 를 넣어주면 해당 위치로 스크롤이 이동한다. -->
+              <a class="nav-link" href="#intro"style="color: white;">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"style="color: white;">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"style="color: white;">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"style="color: white;">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <main class="row">
+      <section id="frontpage" style="margin-top: 100px;">
+        <shortint class="shortint">
+          <div class="row"></div>
+          <icon class="side-link-icon">
+            <i  class="fa-brands fa-youtube"></i>
+            <i  class="fa-brands fa-facebook"></i>
+            <i  class="fa-solid fa-comment"></i>
+          </icon>
+          <img src="img/face.avif" alt="남자사진">
+          <div class="text-container col-sm-12 col-md-6 col-lg-3">
+          <h1 class="hello">반갑습니다</h1>
+          <h3>개발자 꿈나무</h3>
+          <h2 class="iam">박민제</h2>
+          <p>자기소개 시작합니다</p>
+          <button type="button" class="btn btn-info" href="">이메일 보내기</button>
+          </div>
+          </div>
+        </shortint>  
+      </section>
+      <section id = "intro" class="intro" style="margin-top: 100px; font-size: 50px;">intro</section>
+      <div class="card mb-3" style="max-width: 2000px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/me.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">About Me</h5>
+              <p class="card-text">건축학과 졸업 이후 IT 분야에 관심을 가지게 되어 자격증 공부, ICT 기업 인턴 등의 경험이 있음.</p>
+              <p class="card-text"><small class="text-body-secondary">끊임없이 발전 할 예정</small></p>
+              <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Name: 박민제</li>
+                  <li class="list-group-item">Phone: 010-3067-2204</li>
+                  <li class="list-group-item">Email: alswp936@naver.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id = "skills" class="skills row" style="margin-top: 100px; font-size: 50px;">skills</section>
+        <div class="container col-sm-12 col-md-6 col-lg-3"> 
+        <div class="card" style="width: 15rem;">
+          <skill1 class="skill">Frontend</skill1>
+          <img src="img/1000_F_526845142_2HDezW65o5jJqyvfpOj4AGQCd8A9GXfu.jpg" alt="html css js" style="width: 100px; height: 30px; margin: 10px;">
+          <img src="img/imagedds.png" alt=""style="width: 30px; height: 25px;">
+        </div> 
+        </div>
+        <div class="container col-sm-12 col-md-6 col-lg-3"> 
+        <div class="card" style="width: 15rem; display: flex; flex-direction: column;">
+          <skill2 class="skill">Backend</skill2>
+          <img src="img/django.png" alt="html css js" style="width: 100px; height: 30px; margin: 10px;">
+          <img src="img/spring.png" alt=""style="width: 50px; height: 25px;">
+        </div>
+        </div>  
+        <div class="container col-sm-12 col-md-6 col-lg-3"> 
+        <div class="card" style="width: 15rem;">
+          <skill3 class="skill">Batabase</skill3>
+          <img src="img/Mysql_logo.png" alt="html css js" style="width: 100px; height: 30px; margin: 10px;">
+        </div>
+        </div>  
+        <div class="container col-sm-12 col-md-6 col-lg-3"> 
+        <div class="card" style="width: 15rem;">
+          <skill4 class="skill">etc</skill4>
+          <img src="img/AutoCad_new_logo.svg" alt="html css js" style="width: 100px; height: 30px; margin: 10px;">
+        </div> 
+        </div> 
+        <section id = "projects" class="projects" style="margin-top: 100px; font-size: 50px;">Education</section>
+          <div class="container">
+            <div class="card" style="width: 18rem;">
+              <img src="img/arc.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">건축방재전공, '열섬 현상이 건축물에 미치는 영향' 논문 작성</p>
+                <p>2017.03 ~ 2023.02</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/cad.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">모 ICT 기업에서 AutoCAD프로그램을 활용한 배치도 공유 플랫폼 'KT_Er' 추진</p>
+                <p>2017.03 ~ 2023.02</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/ssafy.png" class="card-img-top" alt="..." style="height: 220px;">
+              <div class="card-body">
+                <p class="card-text">SSAFY 입교 후 열공중</p>
+                <p>2024.07 ~ </p>
+              </div>
+            </div>
+
+          </div>
+        
+          
+        <section id = "contact" class="contact" style="margin-top: 100px; font-size: 50px;">contact</section>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="이름" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+              </div>
+        </div>
+            
+  
+        </div>
+        
+      </main>
+  
+    <footer>
+      &copy; 2024. PJT03 모두 공유 가능
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

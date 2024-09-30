@@ -1,0 +1,84 @@
+* {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: rgb(41, 39, 39);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column; /* 화면이 768px 이하로 줄어들면 세로로 정렬 */
+    }
+  }
+
+/* .intro,
+.projects,
+.contact {
+    height: 500px;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.shortint {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .hello {
+    margin: 0;
+  }
+  
+  .iam {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+.btn {
+    width: 50%;
+}
+
+.side-link-icon {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+i {
+    height: 50px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 자식 요소들이 넘칠 경우 다음 줄로 이동하도록 설정 */
+    gap: 20px; /* 카드 간의 간격 설정 */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 카드에 그림자 추가 */
+    border-radius: 10px; /* 카드 모서리를 둥글게 */
+  }
+  
