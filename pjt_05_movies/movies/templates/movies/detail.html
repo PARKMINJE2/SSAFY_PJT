@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>영화 상세 페이지</h1>
-  <hr>
   <hr>
   <form action="{% url "movies:update" movie.pk %}" method="POST">
     {% csrf_token %}
@@ -18,9 +16,5 @@
     {% csrf_token %}
     <button type="submit" class="btn btn-outline-danger">삭제하기</button>
   </form>
-  <hr>
-  <a href="{% url "movies:index" %}">
-    <button type="button" class="btn btn-outline-info">메인으로</button>
-  </a>
 
 {% endblock content %}
