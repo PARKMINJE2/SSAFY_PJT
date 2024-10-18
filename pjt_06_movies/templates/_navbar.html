@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <!-- 여기에 토글 버튼 추가 -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'movies:index' %}">메인 페이지</a>
+        </li>
+
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'movies:create' %}">영화 등록</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:update' %}">정보 수정</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:profile' user.username %}">프로필</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:logout' %}" method="POST">로그아웃</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- 사용자 환영 메시지 -->
+  <div>
+      {% if user.is_authenticated %}
+          <p>어서오세요, {{ user.username }}님</p>
+      {% else %}
+          <p>로그인 하세요.</p>
+      {% endif %}
+  </div>
+</nav>
